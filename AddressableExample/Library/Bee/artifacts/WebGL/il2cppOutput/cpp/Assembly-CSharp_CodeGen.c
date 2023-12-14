@@ -1,0 +1,98 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void AddressableLoader_Start_m10F7F74E1E9A6E65D2B5CD49FC2A6C73B680BC14 (void);
+extern void AddressableLoader_DownloadBundle_m1C107C0B2610E828F5AF96B6232F48D0A525C2F4 (void);
+extern void AddressableLoader_Co_DownloadBundle_mAD47678D14CA8145AFFDE558EC569F32B8156E1A (void);
+extern void AddressableLoader_Update_mA8E0E0118B6484A512CAAAEECBA521463603D3C5 (void);
+extern void AddressableLoader_OnCompleteScene_mD347101BC110532D56FA7FA5AF6B80F6DCAF325C (void);
+extern void AddressableLoader_OnComplete_m6452E19718EA92C7253A6FD981A2022BB82BDD28 (void);
+extern void AddressableLoader__ctor_m36FF6CB0FB6C19CA2EE46E2A2B13568744718A2E (void);
+extern void AddressableLoader_U3CUpdateU3Eb__7_0_m36275CA7A1F908CA82CB8D2E338E61DCFED2C2CA (void);
+extern void U3CU3Ec__cctor_mB4D0801C36E0FF24121188D3163423C12CE9B212 (void);
+extern void U3CU3Ec__ctor_mF6FA2852BE806E52CD496D2BA078661FE3665CEB (void);
+extern void U3CU3Ec_U3CStartU3Eb__3_0_m7559F0FC5D695E94F81A4C4095ACB885C5AFFE19 (void);
+extern void U3CCo_DownloadBundleU3Ed__6__ctor_m5F31D797867217FBC4964BA2FD3418D332305E83 (void);
+extern void U3CCo_DownloadBundleU3Ed__6_System_IDisposable_Dispose_m93E2512422A18DB15C908272F15FCF100DCF3D5F (void);
+extern void U3CCo_DownloadBundleU3Ed__6_MoveNext_m4AF61F12651AA238FE57BF861258FB6BB3B2BB61 (void);
+extern void U3CCo_DownloadBundleU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDAA772AAA6E04634654DE66A299D288C2B577AFF (void);
+extern void U3CCo_DownloadBundleU3Ed__6_System_Collections_IEnumerator_Reset_mBACEE71DC28663032C831F2A5E335A719CF54DD1 (void);
+extern void U3CCo_DownloadBundleU3Ed__6_System_Collections_IEnumerator_get_Current_mF475B971165641D4D3D2A0A4B76ECAF7B492298E (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[19] = 
+{
+	AddressableLoader_Start_m10F7F74E1E9A6E65D2B5CD49FC2A6C73B680BC14,
+	AddressableLoader_DownloadBundle_m1C107C0B2610E828F5AF96B6232F48D0A525C2F4,
+	AddressableLoader_Co_DownloadBundle_mAD47678D14CA8145AFFDE558EC569F32B8156E1A,
+	AddressableLoader_Update_mA8E0E0118B6484A512CAAAEECBA521463603D3C5,
+	AddressableLoader_OnCompleteScene_mD347101BC110532D56FA7FA5AF6B80F6DCAF325C,
+	AddressableLoader_OnComplete_m6452E19718EA92C7253A6FD981A2022BB82BDD28,
+	AddressableLoader__ctor_m36FF6CB0FB6C19CA2EE46E2A2B13568744718A2E,
+	AddressableLoader_U3CUpdateU3Eb__7_0_m36275CA7A1F908CA82CB8D2E338E61DCFED2C2CA,
+	U3CU3Ec__cctor_mB4D0801C36E0FF24121188D3163423C12CE9B212,
+	U3CU3Ec__ctor_mF6FA2852BE806E52CD496D2BA078661FE3665CEB,
+	U3CU3Ec_U3CStartU3Eb__3_0_m7559F0FC5D695E94F81A4C4095ACB885C5AFFE19,
+	U3CCo_DownloadBundleU3Ed__6__ctor_m5F31D797867217FBC4964BA2FD3418D332305E83,
+	U3CCo_DownloadBundleU3Ed__6_System_IDisposable_Dispose_m93E2512422A18DB15C908272F15FCF100DCF3D5F,
+	U3CCo_DownloadBundleU3Ed__6_MoveNext_m4AF61F12651AA238FE57BF861258FB6BB3B2BB61,
+	U3CCo_DownloadBundleU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDAA772AAA6E04634654DE66A299D288C2B577AFF,
+	U3CCo_DownloadBundleU3Ed__6_System_Collections_IEnumerator_Reset_mBACEE71DC28663032C831F2A5E335A719CF54DD1,
+	U3CCo_DownloadBundleU3Ed__6_System_Collections_IEnumerator_get_Current_mF475B971165641D4D3D2A0A4B76ECAF7B492298E,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[19] = 
+{
+	1885,
+	1885,
+	1849,
+	1885,
+	1452,
+	1448,
+	1885,
+	1452,
+	3302,
+	1885,
+	1449,
+	1530,
+	1885,
+	1818,
+	1849,
+	1885,
+	1849,
+	3306,
+	1885,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	19,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
