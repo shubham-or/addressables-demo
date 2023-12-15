@@ -1,0 +1,4 @@
+[submodule "AddressableExample/Assets/SubModule"]
+	path = AddressableExample/Assets/SubModule
+	url = git@github.com:vaishnav1rare/Unity_FoodFury_Multiplayer.git
+	branch = submodule-test
