@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Networking;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
@@ -10,16 +11,15 @@ public class AddressableLoader : MonoBehaviour
     public GameObject _objectInstance;
     public bool _sceneInstance = false;
     private SceneInstance sceneInstance;
-
-
+    public string _key;
+    public string sceneURL;
+    private AsyncOperationHandle<SceneInstance> loadHandle;
 
 
     private void Start()
     {
         Addressables.InitializeAsync().Completed += (d) => { Debug.Log("Addressables InitializeAsync"); };
     }
-
-    public string _key;
 
 
     [ContextMenu("DownloadBundle")]
@@ -105,6 +105,26 @@ public class AddressableLoader : MonoBehaviour
         {
             Debug.Log("Object Succeeded");
             _objectInstance = obj.Result;
+        }
+    }
+
+
+
+    IEnumerator DownloadAndLoadScene()
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(sceneURL))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.Success)
+            {
+                // Load the downloaded scene using Addressables directly from the byte array
+                loadHandle = Addressables.LoadSceneAsync(webRequest.downloadHandler.data, LoadSceneMode.Additive);
+            }
+            else
+            {
+                Debug.LogError("Scene download failed!");
+            }
         }
     }
 }

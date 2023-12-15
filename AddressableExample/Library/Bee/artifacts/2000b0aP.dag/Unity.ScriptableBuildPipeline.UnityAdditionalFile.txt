@@ -1,1 +1,1 @@
-/Users/Office/Projects/AddressableExample
+/Users/Office/Projects/addressables-demo/AddressableExample
